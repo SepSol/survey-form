@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#efefef">
+  <link rel="icon" href="assets/logo (Custom).png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <header>
+    <picture>
+      <source media="(max-width: 400px)" srcset="assets/home-illustration-mobile.png">
+      <source media="(max-width: 800px)" srcset="assets/home-illustration-tablet.png">
+      <img src="assets/home-illustration.jpg" alt="Home Illustration">
+    </picture>
+    <h1 id="title">Our Survey Form</h1>
+    <p id="description">Thank you for participating in our survey</p>
+  </header>
+
+
+  <form action="#" id="survey-form">
+
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number" id="number-label">Age <span class="answer-guide">optional</span></label>
+      <input type="number" name="age" id="number" class="form-control" min="10" max="110" placeholder="Enter your age">
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown" id="dropdown-label" class="form-control">Which programming language do you work with?</label>
+      <select name="" id="dropdown" class="dropdown" required>
+        <option value selected disabled>Select one</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Go">Go</option>
+        <option value="Ruby">Ruby</option>
+        <option value="PHP">PHP</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend your programming language to others?</p>
+      <label>
+        <input type="radio" name="user-recommend" class="input-radio">
+        Absolutely
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" class="input-radio">
+        Probabely
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" class="input-radio">
+        Not sure
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" class="input-radio">
+        Never
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Select things that you like about your programming language. <span class="answer-guide">check all that apply</span></p>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        It's easy to learn.
+      </label>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        It has a great community.
+      </label>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        You can build great things with it.
+      </label>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        It's a modern language and it has a bright future ahead of itself.
+      </label>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        Market adoptation is high and big companies are already using it.
+      </label>
+      <label>
+        <input type="checkbox" name="like-reason" class="input-checkbox">
+        Giants are behind it and it'll have a consistent growth.
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea name="comment" id="comments" class="input-textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+
+  </form>
+  
+
+  <div class="hamburger-menu">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </div>
+  
+</body>
+</html>

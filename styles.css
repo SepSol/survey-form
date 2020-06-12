@@ -7,12 +7,20 @@
 
 :root {
   --primary-color: #865fce;
+  --secondary-color: #E8A437;
+  --form-input-width: 100%;
+  --form-input-height: 40px;
+  --form-input-padding: 10px;
+  --form-input-font-size: 0.9em;
+  --form-input-borders: 2px solid var(--primary-color);
+  --form-input-border-radius: 15px;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'Archivo', sans-serif;
+  line-height: 1.4em;
 }
 
 .hamburger-menu {
@@ -49,17 +57,78 @@ header hr {
 }
 
 form#survey-form {
-  margin: 0 20px;
+  margin: 30px 20px;
 }
 
 form div.form-group {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 form div.form-group * {
   display: inline-block;
+  margin: 3px 0;
 }
 
+form #name-label, #email-label, #number-label {
+  display: block;
+}
+
+form #name, #email, #number, #comments {
+  box-sizing: border-box;
+  width: var(--form-input-width);
+  height: var(--form-input-height);
+  padding: var(--form-input-padding);
+  font-size: var(--form-input-font-size);
+  border: var(--form-input-borders);
+  border-radius: var(--form-input-border-radius);
+  outline: none;
+}
+
+form #comments {
+  height: 200px
+}
+
+form #name:focus, #email:focus, #number:focus, #comments:focus {
+  border-color: var(--secondary-color);
+}
+
+form select#dropdown {
+  box-sizing: border-box;
+  width: var(--form-input-width);
+  height: var(--form-input-height);
+  padding: var(--form-input-padding);
+  font-size: var(--form-input-font-size);
+  border: var(--form-input-borders);
+  border-radius: var(--form-input-border-radius);
+  outline: none;
+}
+
+form select#dropdown:focus {
+  border-color: var(--secondary-color)
+}
+
+form .radios label, .checkboxes label {
+  display: block;
+  margin-top: 12px;
+}
+
+form button#submit {
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: #eee;
+  border-radius: var(--form-input-border-radius);
+  border: transparent;
+  text-transform: uppercase;
+  outline: none;
+}
+
+form button#submit:hover {
+  background-color: #513585;
+}
 
 footer {
   background-color: var(--primary-color);

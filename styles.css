@@ -82,6 +82,7 @@ form #name, #email, #number, #comments {
   border: var(--form-input-borders);
   border-radius: var(--form-input-border-radius);
   outline: none;
+  transition: 0.2s;
 }
 
 form #comments {
@@ -124,10 +125,11 @@ form button#submit {
   border: transparent;
   text-transform: uppercase;
   outline: none;
+  transition: 0.2s;
 }
 
 form button#submit:hover {
-  background-color: #513585;
+  background-color: #5325a8;
 }
 
 footer {

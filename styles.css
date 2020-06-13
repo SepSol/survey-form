@@ -77,6 +77,14 @@ form #name-label, #email-label, #number-label {
   display: block;
 }
 
+form label span, form p span {
+  background-color: #dedede;
+  color: #555;
+  font-size: 0.9em;
+  padding: 1px 8px;
+  border-radius: 8px;
+}
+
 form #name, #email, #number, #comments {
   box-sizing: border-box;
   width: var(--form-input-width);

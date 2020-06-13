@@ -195,13 +195,15 @@ footer br {
 @media screen and (min-width: 1200px) {
   
   body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
   
   div.container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 100vh;
+    padding: 40px 0;
+    box-sizing: border-box;
     /* position: absolute;
     top: 0;
     right: 0;
@@ -210,11 +212,16 @@ footer br {
 
   picture {
     grid-column: 1 / 8;
+    justify-self: end;
+    align-self: stretch;
   }
 
   picture img {
-    min-height: 100vh;
+    height: 95vh;
     /* width: auto; */
+    /* width: 300px; */
+    /* width: 150%; */
+    /* transform-origin: bottom right; */
   }
   
   form#survey-form {

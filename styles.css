@@ -203,7 +203,7 @@ footer br {
 @media screen and (min-width: 1200px) {
   
   body {
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
   }
   
   div.container {
